@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/backgroundColor">
+
+	    	<RelativeLayout
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="168dp" >
+
+	        	<EditText
+	        	    android:id="@+id/add_app_id_field"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_alignBaseline="@+id/app_id_label"
+	        	    android:layout_alignBottom="@+id/app_id_label"
+	        	    android:layout_alignParentRight="true"
+	        	    android:layout_toRightOf="@+id/app_id_label"
+	        	    android:text=""
+	        	    android:textSize="12sp">
+	        	    <requestFocus />
+	        	     
+	        	     </EditText>
+
+		    	<EditText
+		    	    android:id="@+id/add_secret_key_field"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_alignBaseline="@+id/secret_key_label"
+		    	    android:layout_alignBottom="@+id/secret_key_label"
+		    	    android:layout_alignParentRight="true"
+		    	    android:layout_toRightOf="@+id/secret_key_label"
+		    	    android:text=""
+		    	    android:textSize="12sp" />
+			
+			    <CheckBox
+			        android:id="@+id/add_managed_currency_checkbox"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignBaseline="@+id/managed_currency_label"
+			        android:layout_alignBottom="@+id/managed_currency_label"
+			        android:layout_marginLeft="14dp"
+			        android:layout_toRightOf="@+id/managed_currency_label"
+			        android:text=" " />
+			
+			    <TextView
+			        android:id="@+id/managed_currency_label"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:layout_below="@+id/secret_key_label"
+					android:layout_marginTop="18dp"
+			        android:gravity="center"
+			        android:text="Managed Currency" />
+			
+			    <TextView
+			        android:id="@+id/app_id_label"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="16dp"
+			        android:text="App ID" />
+			
+			    <TextView
+			        android:id="@+id/secret_key_label"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignLeft="@+id/app_id_label"
+			        android:layout_below="@+id/add_app_id_field"
+			        android:layout_marginTop="18dp"
+			        android:text="Secret Key" />
+
+			    <TextView
+			        android:id="@+id/currency_id_label"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignLeft="@+id/managed_currency_label"
+			        android:layout_below="@+id/add_managed_currency_checkbox"
+			        android:layout_marginTop="18dp"
+			        android:text="Currency IDs" />
+
+			    <EditText
+			        android:id="@+id/add_currency_id_field"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+		    	    android:layout_alignBaseline="@+id/currency_id_label"
+		    	    android:layout_alignBottom="@+id/currency_id_label"
+		    	    android:layout_alignParentRight="true"
+			        android:layout_toRightOf="@+id/currency_id_label"
+			        android:text=""
+			        android:textSize="12sp" />
+				
+		    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+   	<LinearLayout 
+	android:id="@+id/LinearLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="15dp"
+	android:background="@color/backgroundColor">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="142dp" >
+
+    <Button
+        android:id="@+id/select_event_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/device_id_label"
+        android:layout_alignBottom="@+id/device_id_label"
+        android:layout_alignRight="@+id/debug_output_field_events"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/device_id_label"
+        android:background="@android:drawable/btn_dropdown"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Select Event" />
+
+    <TextView
+        android:id="@+id/device_id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="eventName" />
+
+    <Button
+        android:id="@+id/send_event_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/device_id_label"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="Send" />
+
+	</RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="14dp" />
+    <TextView
+        android:id="@+id/debug_output_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debug Output"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <EditText
+        android:id="@+id/debug_output_field_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textMultiLine|textNoSuggestions" >
+
+        <requestFocus />
+    </EditText>
+
+
+</LinearLayout>
+</ScrollView>

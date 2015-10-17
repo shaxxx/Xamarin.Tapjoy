@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TapjoySampleApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+     <string name="hello">Hello world!</string>
+    <string name="select_event">Select Event</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="title_activity_device">DeviceActivity</string>
+    <string name="title_activity_virtual_currency">VirtualCurrencyActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_features">FeaturesActivity</string>
+    <integer name="google_play_services_version">8</integer>
+</resources>

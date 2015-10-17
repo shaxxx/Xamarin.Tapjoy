@@ -1,0 +1,76 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fillViewport="true">
+   	<LinearLayout 
+	android:id="@+id/LinearLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="15dp"
+	android:background="@color/backgroundColor">
+		
+		    <View
+		        android:layout_height="5dp"
+		        android:layout_width="fill_parent" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Event-Based APIs" 
+				android:id="@+id/EventsButton" 
+				android:visibility="visible" 
+				android:layout_margin="5dp"/>
+			
+			<Button 
+                android:layout_height="wrap_content" 
+                android:layout_width="fill_parent" 
+                android:text="Offerwall" 
+                android:id="@+id/OffersButton" 
+                android:visibility="visible" 
+                android:layout_margin="5dp"/>
+
+			<Button
+			    android:id="@+id/GetDirectPlayVideoAd"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="5dp"
+			    android:text="Get Direct Play Video Ad"
+			    android:visibility="visible" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Virtual Currency" 
+				android:id="@+id/VirtualCurrencyButton" 
+				android:visibility="visible" 
+				android:layout_margin="5dp"/>
+		
+			<View 
+		        android:layout_height="5dp"
+		        android:layout_width="fill_parent"/>
+		    
+		    <TextView
+		        android:id="@+id/debug_output_label1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Debug Output"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+		    <EditText
+		        android:id="@+id/debug_output_field_features"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:inputType="textMultiLine|textNoSuggestions" 
+		        android:clickable="false" 
+		        android:cursorVisible="false" 
+		        android:focusable="false" 
+		        android:focusableInTouchMode="false">
+		
+		        <requestFocus />
+		    </EditText>
+   	</LinearLayout>
+</ScrollView>
