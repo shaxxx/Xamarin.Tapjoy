@@ -1,0 +1,23 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyCache.CacheAssetThread']/method[@name='call' and count(parameter)=0]" name="managedName">BoolCall</attr>
+  <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyDisplayAd.GetBannerAdTask']" />
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnectCore']/method[@name='setVideoEnabled' and count(parameter)=1 and parameter[1][@type='boolean']]" name="managedName">setVideoEnabledOverload</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnectCore']/method[@name='isVideoEnabled' and count(parameter)=0]" name="managedName">isVideoEnabledOverload</attr>
+<!--  <remove-node path="/api/package[@name='com.tapjoy.mraid.view']/class[@name='Browser']" />
+  <remove-node path="/api/package[@name='com.tapjoy.mraid.view']/class[@name='ActionHandler']" />-->
+   <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TJAdUnitView.TJAdUnitViewListener']" />
+  <remove-node path="/api/package[@name='com.tapjoy.mraid.listener']" />
+   <remove-node path="/api/package[@name='com.tapjoy.mraid.view']" />
+   <remove-node path="/api/package[@name='com.tapjoy.mraid.controller']" />
+   <remove-node path="/api/package[@name='com.tapjoy.mraid.util']" />
+   <remove-node path="/api/package[@name='com.threatmetrix.TrustDefenderMobile']" />
+</metadata>
+
