@@ -56,16 +56,13 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Xamarin.Android.Bindings.targets" />
   <ItemGroup>
     <ReferenceJar Include="Jars\AboutJars.txt" />
-    <ReferenceJar Include="Jars\google-play-services.jar">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </ReferenceJar>
   </ItemGroup>
   <ItemGroup>
     <InputJar Include="Jars\tapjoyconnectlibrary.jar">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </InputJar>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>
